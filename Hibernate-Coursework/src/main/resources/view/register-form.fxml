@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="node" prefHeight="384.0" prefWidth="536.0" style="-fx-background-color: #dcdde1; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.RegisterFormController">
+   <children>
+      <Circle fill="#1dd1a1" layoutX="398.0" layoutY="-42.0" radius="134.0" stroke="#1dd1a1" strokeType="INSIDE" />
+      <Text layoutX="10.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+      <Line endX="147.0" layoutX="111.0" layoutY="33.0" startX="-100.0" strokeWidth="0.9" />
+      <Text layoutX="24.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a your Account">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="14.0" layoutY="151.0" opacity="0.9" prefHeight="26.0" prefWidth="250.0" promptText="Name" />
+      <TextField fx:id="txtTele" layoutX="14.0" layoutY="186.0" opacity="0.9" prefHeight="26.0" prefWidth="250.0" promptText="Telephone" />
+      <TextField fx:id="txtEmail" layoutX="14.0" layoutY="220.0" opacity="0.9" prefHeight="26.0" prefWidth="250.0" promptText="Email" />
+      <PasswordField fx:id="txPassword" layoutX="14.0" layoutY="254.0" opacity="0.9" prefHeight="26.0" prefWidth="249.0" promptText="Password" />
+      <JFXButton fx:id="btnRegistre" buttonType="RAISED" layoutX="96.0" layoutY="326.0" onAction="#btnRegisterOnAction" prefHeight="26.0" prefWidth="81.0" text="Register" textFill="WHITE" />
+      <Text layoutX="32.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you have an Account ?" wrappingWidth="155.90850830078125" />
+      <Hyperlink fx:id="hyperLogIn" layoutX="174.0" layoutY="360.0" onAction="#hyperLogInOnAction" text="Log in here" />
+      <TextField fx:id="txtId" layoutX="14.0" layoutY="116.0" opacity="0.9" prefHeight="26.0" prefWidth="250.0" promptText="User ID" />
+      <JFXComboBox fx:id="cmbAccountType" layoutX="14.0" layoutY="78.0" onAction="#cmbAccountTypeOnAction" prefHeight="26.0" prefWidth="251.0" promptText="Select account type" />
+      <PasswordField fx:id="txtConfirmPassword" layoutX="14.0" layoutY="290.0" prefHeight="26.0" prefWidth="250.0" promptText="Confirm Password" />
+      <ImageView fitHeight="268.0" fitWidth="261.0" layoutX="274.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/cooking-clipart-transparent-3%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+   <stylesheets>
+      <URL value="@../assets/styles/registerStyle.css" />
+      <URL value="@../assets/styles/style.css" />
+   </stylesheets>
+</AnchorPane>
